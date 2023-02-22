@@ -294,10 +294,11 @@ margin: 0 auto;
   background-color: #1d9ba1;
 }
 
-/* =====================================================media queris */
+/* ============================================media queris */
 @media (min-width: 280px) {
   .hamburger {
     display: block;
+    margin-right: 2rem;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -310,17 +311,23 @@ margin: 0 auto;
   }
   .nav-menu {
     position: fixed;
-    top: 70px;
+    top: 60px;
     right: -100%;
     flex-direction: column;
     gap: 0;
-    background-color: #a3dbf2;
+    background-color: #0dd1ca;
     transition: 0.3s;
     text-align: center;
-    width: 15%;
+    width: 100%;
   }
+  .social-icon {
+    margin-right: 2rem;
+}
   .nav-item {
     margin: 16px 0;
+  }
+  .nav-link{
+    color: #eff;
   }
   .nav-menu.active {
     right: 0;
@@ -356,10 +363,6 @@ margin: 0 auto;
     width: 7rem;
     height: 7rem;
   }
-.header-section-content h3 {
-  letter-spacing: 1px;
-  font-size: 15px;
-  }
   .testimonial h5 {
     margin-bottom: 6px;
   }
@@ -368,18 +371,17 @@ margin: 0 auto;
     align-items: center;
    }
   .header-section-content h3 {
-    letter-spacing: 2px;
+    font-size: 33px;
+    letter-spacing: 1px;
     margin-left: 0;
-    margin-top: 2rem;
+    margin-top: 7rem;
   
   }
   .header-section-content p {
-    font-size: 10px;
+    font-size: 13px;
+    padding: 0;
   }
-  .center{
-    margin-left: 5rem;
-  }
-
+ 
   .footer-end {
     grid-template-columns: 1fr;
   }
@@ -395,8 +397,27 @@ margin: 0 auto;
   .form h4 {
     font-size: 20px;
   }
+  .foooter-icon-content a{
+    font-size: 12px;
+  }
+  .foooter-icon-content {
+    gap: 4px;
 }
-/* iphone 10/12/13/sumsung */
+  /* trying something */
+  .header-section{
+    width: 100%;
+    height: 60vh;
+    background-image: url(asset/kilimanjaro-2.avif) ;
+    background-position: center;
+    background-repeat: no-repeat; 
+  }
+  .center{
+    margin-left: 0rem;
+    text-align: center;
+  }
+   /* /trying something */
+}
+/* ===============================iphone 10/12/13/sumsung */
 @media (min-width: 375px) {
   .testimonial-content{
     grid-template-columns:  1fr;
@@ -405,7 +426,8 @@ margin: 0 auto;
     margin-right: 2rem;
   }
   .navbar {
-    gap: 2px;}
+    gap: 11rem;
+  }
   .testimonial-box {
     grid-template-columns:1fr;
   }
@@ -413,6 +435,9 @@ margin: 0 auto;
     flex-direction: column;
     font-size: 10px;
     }
+    .header-section-content h3 {
+      margin-top: 8rem;
+  }
 }
 /* portraite */
 @media (min-width: 667px){
@@ -422,23 +447,44 @@ margin: 0 auto;
   .testimonial-box {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-}
-.footer-end {
+  }
+  .footer-logo {
+  width: 175px;
+  height: 175px;
+  }
+  .footer-end {
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  }
+  .footer-end h5 {
+  font-size:22px;
+  }
+  .footer-end p {
+  font-size: 11px;
+  }
+  .zebra-img-box {
+    flex-direction: row;
 }
-.footer-end h5 {
-font-size: 33px;
-}
-.footer-end p {
+.testimonial-content p {
   font-size: 14px;
 }
-.form {
+.header-section-content h3 {
+  font-size: 45px;
+  margin-top: 4rem;
+}
+  .form {
   width: 100%;
-}
-.form h4 {
+  }
+  .form h4 {
   font-size: 20px;
-}
-
+  }
+  .header-section{
+    width: 100%;
+    height: 90vh;
+  }
+  /* .header-section-content p {
+    font-size: 18px;
+  } */
 }
 /* for larger devices */
 @media (min-width: 1024px){
@@ -507,6 +553,10 @@ font-size: 33px;
   }
   .form h4 {
     font-size: 20px;
+  }
+  .header-section{
+    /* width: 180%; */
+    height: 130vh;
   }
   
 }
