@@ -186,6 +186,7 @@ margin: 0 auto;
   width: 100%;
   margin-bottom: 2.5rem;
 }
+
 .zebra h4{
  text-align: center;
  margin-bottom: 1rem;
@@ -211,7 +212,89 @@ margin: 0 auto;
 .zebra-img-box img:hover{
   transform: scale(1.01);
 }
-/* media queris */
+/* =========FOOOOTER */
+.footer-icon{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 3rem;
+  background-color:#3ac0c7 ;
+}
+.foooter-icon-content{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+ 
+}
+.icon-footer{
+  color: #fff;
+}
+.footer-end{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  background-color: #1c8a43;
+  gap: 4rem;
+  padding: 70px 10rem;
+}
+.footer-logo{
+  width: 250px;
+  height: 250px;
+ color: red;
+  
+}
+.footer-end h5{
+  font-size: 43px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+.footer-end p{
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer-end span{
+  display: block;
+  color: #fff;
+  line-height: 1.8;
+}
+.form{
+  width: 70%;
+  background-color: #696969;
+  padding: 10px;
+}
+.form h4{
+  font-size: 30px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.form input{
+  width: 100%;
+  display: block;
+  padding: 10px 25px;
+  border: 1px solid #eee;
+  color: #696969;
+  outline: none;
+  margin-bottom: 1rem;
+}
+.btn-footer{
+  width: 100%;
+  background-color: #3ac0c7;
+  padding: 10px 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5rem;
+  transition: ease 0.5s;
+}
+.btn-footer:hover{
+  background-color: #1d9ba1;
+}
+
+/* =====================================================media queris */
 @media (min-width: 280px) {
   .hamburger {
     display: block;
@@ -290,11 +373,27 @@ margin: 0 auto;
     margin-top: 2rem;
   
   }
-.header-section-content p {
+  .header-section-content p {
     font-size: 10px;
   }
-.center{
+  .center{
     margin-left: 5rem;
+  }
+
+  .footer-end {
+    grid-template-columns: 1fr;
+  }
+  .footer-end h5 {
+  font-size: 15px;
+  }
+  .footer-end p {
+    font-size: 14px;
+  }
+  .form {
+    width: 85%;
+  }
+  .form h4 {
+    font-size: 20px;
   }
 }
 /* iphone 10/12/13/sumsung */
@@ -324,6 +423,22 @@ margin: 0 auto;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+.footer-end {
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer-end h5 {
+font-size: 33px;
+}
+.footer-end p {
+  font-size: 14px;
+}
+.form {
+  width: 100%;
+}
+.form h4 {
+  font-size: 20px;
+}
+
 }
 /* for larger devices */
 @media (min-width: 1024px){
@@ -378,5 +493,21 @@ margin: 0 auto;
   .header-section-content p {
   font-size: 20px;
   }
+  .footer-end {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-end h5 {
+  font-size: 33px;
+  }
+  .footer-end p {
+    font-size: 14px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form h4 {
+    font-size: 20px;
+  }
+  
 }
 
